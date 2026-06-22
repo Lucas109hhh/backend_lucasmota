@@ -10,9 +10,9 @@ for (let i = 0; i < 5; i++) {
 let media = soma / 5;
 
 if (media >= 7) {
-    console.log(`Aprovado`);
+    console.log("Aprovado");
 } else if (media >= 5) {
-    console.log(`Recuperacao`);
+    console.log("Recuperacao");
 } else {
-    console.log(`Reprovado`);
+    console.log("Reprovado");
 }

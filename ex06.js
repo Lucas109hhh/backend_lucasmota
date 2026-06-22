@@ -8,7 +8,7 @@ while(true){
     tentativas++;
 
     if(chute === secreto) {
-        console.log(`Acertou! Tentativas: ${tentativas}`)
+        console.log(`Você acertou! Tentativas: ${tentativas}`)
         break;
     } else if(chute < secreto) {
         console.log(`O número secreto é maior`)

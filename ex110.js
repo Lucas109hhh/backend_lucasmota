@@ -1,0 +1,15 @@
+function contarLetra(texto, letra) {
+    let contador = 0;
+
+    for (let i = 0; i < texto.length; i++) {
+        if (texto[i] === letra) {
+            contador++;
+        }
+    }
+
+    return contador;
+}
+
+let resultado = contarLetra("banana", "a");
+
+console.log(`A letra aparece ${resultado} vezes.`);
