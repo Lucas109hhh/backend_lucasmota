@@ -1,12 +1,16 @@
-for (let numero = 1; numero <= 100; numero++) {
+const readline = require("readline-sync");
 
-    if (numero % 3 == 0 && numero % 5 == 0) {
+let limite = readline.questionInt("Digite até qual numero quer rodar o FizzBuzz: ");
+
+for (let numero = 1; numero <= limite; numero++) {
+
+    if (numero % 3 === 0 && numero % 5 === 0) {
         console.log("FizzBuzz");
     }
-    else if (numero % 3 == 0) {
+    else if (numero % 3 === 0) {
         console.log("Fizz");
     }
-    else if (numero % 5 == 0) {
+    else if (numero % 5 === 0) {
         console.log("Buzz");
     }
     else {

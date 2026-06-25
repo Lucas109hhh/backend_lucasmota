@@ -1,3 +1,5 @@
+const readline = require("readline-sync");
+
 function contarLetra(texto, letra) {
     let contador = 0;
 
@@ -10,6 +12,9 @@ function contarLetra(texto, letra) {
     return contador;
 }
 
-let resultado = contarLetra("banana", "a");
+let texto = readline.question("Digite uma palavra: ");
+let letra = readline.question("Digite uma letra: ");
+
+let resultado = contarLetra(texto, letra);
 
 console.log(`A letra aparece ${resultado} vezes.`);

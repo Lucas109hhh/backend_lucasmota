@@ -7,18 +7,24 @@ let produtos = [
 ];
 
 let produtoId3 = produtos.find(p => p.id === 3);
-console.log(`Produto com id 3: ${produtoId3.nome} - R$${produtoId3.preco}`);
+
+console.log("Produto com id 3:");
+console.log(`${produtoId3.nome} - R$${produtoId3.preco}`);
 
 let caros = produtos.filter(p => p.preco > 100);
-console.log(`\nProdutos com preco acima de 100:`);
+
+console.log("\nProdutos com preço acima de 100:");
 caros.forEach(p => {
     console.log(`${p.nome} - R$${p.preco}`);
 });
 
 let nomes = produtos.map(p => p.nome);
-console.log(`\nNomes dos produtos: ${nomes}`);
 
-console.log(`\nCatalogo de produtos:`);
+console.log("\nNomes dos produtos:");
+console.log(nomes);
+
+console.log("\nCatálogo de produtos:");
+
 produtos.forEach(p => {
-    console.log(`ID: ${p.id} | Nome: ${p.nome} | Preco: R$${p.preco}`);
+    console.log(`ID: ${p.id} | Nome: ${p.nome} | Preço: R$${p.preco}`);
 });

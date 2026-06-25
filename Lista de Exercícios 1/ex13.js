@@ -1,3 +1,5 @@
+const readline = require("readline-sync");
+
 function range(inicio, fim) {
     let array = [];
 
@@ -18,6 +20,9 @@ function soma(array) {
     return total;
 }
 
-let resultado = soma(range(1, 10));
+let inicio = readline.questionInt("Digite o inicio do range: ");
+let fim = readline.questionInt("Digite o fim do range: ");
+
+let resultado = soma(range(inicio, fim));
 
 console.log(`A soma do range e: ${resultado}`);

@@ -1,3 +1,5 @@
+const readline = require("readline-sync");
+
 function reverter(array) {
     let novoArray = [];
 
@@ -8,7 +10,15 @@ function reverter(array) {
     return novoArray;
 }
 
-let original = [1, 2, 3, 4, 5];
+let quantidade = Number(readline.question("Quantos numeros voce quer digitar? "));
+
+let original = [];
+
+for (let i = 0; i < quantidade; i++) {
+    let numero = Number(readline.question(`Digite o ${i + 1}º numero: `));
+    original.push(numero);
+}
+
 let invertido = reverter(original);
 
 console.log(`Array original: ${original}`);

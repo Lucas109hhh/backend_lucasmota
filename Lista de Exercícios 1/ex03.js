@@ -1,4 +1,6 @@
-let numero = 9;
+const readline = require("readline-sync");
+
+let numero = readline.questionInt("Digite um numero: ");
 
 let resultado = (numero % 2 === 0) ? "par" : "impar";
 

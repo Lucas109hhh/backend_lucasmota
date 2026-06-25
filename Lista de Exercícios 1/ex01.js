@@ -1,4 +1,6 @@
-let celsius = 35;
+const readline = require("readline-sync");
+
+let celsius = readline.questionInt("Digite a temperatura em Celsius: ");
 let fahrenheit = (celsius * 1.8) + 32;
 
-console.log(`${celsius} celsius equivalem a ${fahrenheit} fahrenheit`);
+console.log(`${celsius}°C equivalem a ${fahrenheit}°F`);
